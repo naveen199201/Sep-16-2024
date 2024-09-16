@@ -1,0 +1,55 @@
+.story-list {
+    width :72%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+  
+  }
+  
+  .story {
+    border: 1px solid #ddd;
+    padding: 5px;
+    margin: 10px;
+    min-height: 120px;
+    width: 300px;
+    transition: transform .2s;
+    max-width: 600px;
+    text-align: left; 
+    /* box-shadow: 5px 5px #efebeb; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* font-weight: 500;    */
+  }
+  .story:hover{
+    transform: scale(1.05);
+  }
+  
+  .story-title {
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    min-height: 60px;
+    
+  }
+  
+
+
+  span{ 
+    font-weight: 400;
+  }
+  p{
+    font-weight: bold;
+    margin: 1px;
+  }
+  
+  .story-author, .story-score, .story-time {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
