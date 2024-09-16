@@ -27,6 +27,8 @@ Once `pip` has finished downloading the dependencies:
 ```sh
 (env)$ uvicorn app.main:app --reload
 ```
+Runs the app in the development mode.
+Open http://localhost:8000/top10 to view it in your browser.
 
 ## Frontend Setup
 First thing to do is to install the required node modules
