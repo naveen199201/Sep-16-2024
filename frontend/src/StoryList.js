@@ -37,7 +37,7 @@ const StoryList = () => {
             {stories.map((story, index) => (
                 <div className="story" key={index}>
                     <a href={story.url} target="_blank" rel="noopener noreferrer" className="story-title">
-                        {story.title.length > 40 ? `${story.title.slice(0, 30)}...` : story.title}
+                        {story.title.length > 50 ? `${story.title.slice(0, 30)}...` : story.title}
                     </a>
                     <span className='attributes'>
                         <p className="story-author">Author :<span> {story.author}</span></p>
@@ -46,7 +46,7 @@ const StoryList = () => {
                     </span>
                 </div>
             ))}
-        </div>
+            </div>  
     );
 };
 

@@ -1,29 +1,25 @@
 .story-list {
-    width :72%;
+    width :80%;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     align-items: center;
-    margin: auto;
-  
+    margin-inline: auto;
+    justify-content: center;
   }
-  
+
   .story {
     border: 1px solid #ddd;
     padding: 5px;
     margin: 10px;
     min-height: 120px;
-    width: 300px;
+    width: 22%;
     transition: transform .2s;
     max-width: 600px;
     text-align: left; 
-    /* box-shadow: 5px 5px #efebeb; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* font-weight: 500;    */
   }
   .story:hover{
     transform: scale(1.05);
@@ -37,8 +33,6 @@
     min-height: 60px;
     
   }
-  
-
 
   span{ 
     font-weight: 400;
@@ -53,3 +47,32 @@
     color: #666;
   }
   
+  @media only screen and (max-width: 600px) {
+    .story {
+      width: 100%;
+    }
+  }
+
+@media only screen and (min-width: 600px) {
+  .story {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .story {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .story{
+    width: 31%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .story{
+    width: 22%;
+  }
+}
