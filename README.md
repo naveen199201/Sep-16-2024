@@ -23,14 +23,15 @@ This command will:
 ### Access the Application
 
 **Frontend:** 
-Open your browser and navigate to [http://localhost] to view the React application.
+Open your browser and navigate to [ http://localhost ] to view the React application.
 
 **Backend:** 
-The FastAPI API is available at [http://localhost:8000].
+The FastAPI API is available at [ http://localhost:8000 ].
 
 ### Interacting with the API
 
 The backend provides a /top10 endpoint that fetches the top 10 stories from HackerNews.
+
 You can directly access it by visiting: [http://localhost:8000/top10] in your browser.
 
 
