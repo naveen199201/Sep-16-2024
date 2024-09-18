@@ -4,7 +4,7 @@ module.exports = {
       '^.+\\.jsx?$': 'babel-jest',
     },
     transformIgnorePatterns: [
-      '/node_modules/(?!axios)/', // Transform `axios` in `node_modules`
+      '/node_modules/(?!axios)/',
     ],
     testEnvironment: 'jsdom',
   };

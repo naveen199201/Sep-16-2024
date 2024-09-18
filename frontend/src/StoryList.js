@@ -11,7 +11,7 @@ const StoryList = () => {
 
         const fetchStories = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/top10');
+                const response = await axios.get("http://localhost:8000/top10/");
                 console.log(response.data)
                 setStories(response.data);
                 setLoading(false);

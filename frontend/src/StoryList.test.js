@@ -52,7 +52,6 @@ describe('StoryList Component', () => {
     render(<StoryList />);
 
     await waitFor(() => {
-        // Assert that stories are rendered
         expect(screen.getByText('First Story')).toBeInTheDocument();
     });
     expect(screen.getByText('Second Story')).toBeInTheDocument();
@@ -63,7 +62,7 @@ describe('StoryList Component', () => {
 
   test('handles empty story list gracefully', async () => {
     axios.get.mockResolvedValueOnce({ data: [] });
-
+    
     render(<StoryList />);
     
     await waitFor(() => {

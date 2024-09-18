@@ -1,50 +1,35 @@
 # Sep-16-2024
 
-## Backend Setup
+## Project Setup(React + FastAPI App with Docker Compose)
+
+### Clone the Repository
 
 The first thing to do is to clone the repository:
 
 ```sh
 $ git clone https://github.com/naveen199201/Sep-16-2024.git
-$ cd backend
-```
 
-Create a virtual environment to install dependencies in and activate it:
+```
+### Build and Run the Application
+
+Use docker-compose to build the images and run the containers:
 
 ```sh
-$ py -m venv env
-$ .\env\Scripts\Activate.ps1
+$ docker-compose up --build
 ```
+This command will:
+    Build the Docker images for both the frontend (React) and backend (FastAPI).
 
-Then install the dependencies:
-a 
-```sh
-(env)$ pip install -r requirements.txt 
-```
+### Access the Application
 
+**Frontend:** 
+Open your browser and navigate to [http://localhost] to view the React application.
 
-Once `pip` has finished downloading the dependencies:
-```sh
-(env)$ uvicorn app.main:app --reload
-```
-Runs the app in the development mode.
-Open http://localhost:8000/top10 to view it in your browser.
+**Backend:** 
+The FastAPI API is available at [http://localhost:8000].
 
-## Frontend Setup
-First thing to do is to install the required node modules
-```sh
-$ cd frontend
-$ npm install
-```
-Start the app by using the following command
-```sh
-$ npm start
-```
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Interacting with the API
+    The backend provides a /top10 endpoint that fetches the top 10 stories from HackerNews.
+    You can directly access it by visiting: [http://localhost:8000/top10] in your browser.
 
-Run the test case by using the following command
-```sh
-$ npm test
-```
 

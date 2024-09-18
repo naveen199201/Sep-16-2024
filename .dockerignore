@@ -1,0 +1,40 @@
+# Ignore node_modules for frontend (React)
+frontend/node_modules
+frontend/build
+frontend/.env.local
+frontend/.cache
+frontend/.next
+
+# Ignore Python virtual environments
+backend/__pycache__
+backend/env
+backend/venv
+
+# Ignore environment and secrets files
+.env
+.env.*
+!env.example  # Allow env.example if you want to keep a sample env file
+
+# Ignore local development logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+*.pid
+
+# Ignore Docker-related files (if not needed inside the container)
+docker-compose.yml
+Dockerfile
+
+# Ignore OS-specific files (Mac, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore version control files
+.git
+.gitignore
+
+# Ignore IDE-specific files
+.vscode
+.idea
+*.iml
